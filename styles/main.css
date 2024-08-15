@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+    /*Colors*/
+    --rojo: #E83D49;
+    --dorado: #A39667;
+    --negro: #0D0D0D;
+    --crema: #F2F0E9;
+    --gris: #F2F2F2;
+    --azul: #07325D;
+    /*Fonts*/
+    --ffInter: "Inter", sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: var(--ffInter);
+}
+
+#viewDiv {
+    padding: 0;
+    margin: 0;
+    height: 93%;
+    width: 100%;
+}
+
+#basemapStyles {
+    width: 250px;
+    padding: 10px;
+}
+
+.bg_navbar {
+    background-color: var(--negro);
+}
+
+.bg_mapa {
+    background-color: var(--crema);
+}
+
+.bg-footer {
+    background-color: var(--negro);
+    color: var(--crema);
+}
+
+.mapa {
+    height: 800px;
+    width: auto;
+}
+
+#btnPdf {
+    background-color: var(--rojo);
+    color: var(--crema);
+    font-size: 1.2rem;
+    border: 1px solid var(--rojo);
+    border-radius: 16px;
+    padding: 8px 40px;
+    font-weight: 800;
+
+}
+
+#btnPdf:hover {
+    background-color: var(--dorado);
+    border: 1px solid var(--dorado);
+}
+
+#btnPdf:focus-visible {
+    background-color: var(--azul);
+    color: var(--crema);
+    font-size: 1.2rem;
+    border: 1px solid var(--azul);
+}
+
+p::selection {
+    background: var(--rojo);
+    color: var(--crema);
+}
+
+/* 
+:host([scale="m"]) .container {
+    margin-block-end: var(--calcite-label-margin-bottom, 0.35rem);
+}
+
+.calcite-label :host .container {
+    line-height: 1.375;
+    color: var(--rojo) !important;
+}
+
+:host([scale="m"]) .container {
+    font-size: 18px;
+    line-height: 24px;
+    display: grid;
+} */
